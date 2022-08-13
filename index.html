@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body class="fondo">
+   <!--Menu nav--> 
+    <nav class="menuhome">
+        <div class="contmenu">
+            <div class="navmenu">
+                <a href="index.html"><img src="imagenes/iconos/house-chimney-solid.svg"/></a>
+            </div>  
+            <div class="menu">
+                <ul>
+                    <li><a href="#proyect">Mis proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+
+    <!--Sobre Mi
+    <div class="about">
+        <img src="imagenes/SNOW_20220811_130656_915.jpg"/>
+        <span>Sobre mi</span>
+    </div>-->
+    <div class="contenedor" id="proyect">
+        <!--Mis Proyectos-->
+        <span >Bienvenido/a a Mis Proyectos</span>
+        <div class="contencard">
+            <div class="cards">
+                <img src="imagenes/compras.jpg" id="carritocom"></img>
+                <div class="textcard">    
+                    <h2>Proyecto Carrito de Compras</h2>
+                    <span>Podras explorar una tienda ficticia, seleccionar productos y agregarlos al carrito.</span>
+                    <span>Creado con Html | Css | JavaScript </span>
+                    <a href="proyectoCarrito.html" class="butons">Ver Proyecto</a>      
+                </div>
+               
+            </div>
+            <div class="cards">
+                <img src="imagenes/construction.png" id="carritocom"></img>
+                <div class="textcard">    
+                    <h2>Proyecto en Proceso</h2>
+                    <span>Pronto agregare mas proyectos!.</span>    
+                </div>
+                <a href="#" class="disabled">Ver Proyecto</a> 
+            </div>
+        </div>
+        <div class="contcontact" id="contact">
+            <div class="contacto">
+                <span>Contactame</span>
+                <form class="form" action="">
+                    <input type="text" id="name" class="casilla" placeholder="Nombre"/>
+                    <input type="email" id="mail" class="casilla"placeholder="Correo Electronico"/>
+                    <textarea id="msg" placeholder="Mensaje" class="casilla"></textarea>
+                    <button id="btnenv" class="boton">Enviar</button>
+                </form>
+            <div class="contredes">
+                <div class="separador">
+                    <span></span>
+                    <p>o</p>
+                    <span></span>
+                </div>  
+                <div class="redes">
+                    <a href="#"><img src="imagenes/iconos/icono-linkedin-azul-300x300.png"/></a>
+                    <a href="#"><img src="imagenes/iconos/icono-github.png"/></a>   
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

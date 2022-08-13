@@ -1,0 +1,224 @@
+:root{
+    --color-blanco:#FFFFFF;
+    --color-negro:#000000;
+    --color-gris:#B0B0B0;
+    --font-OpenSans:"Open Sans", sans-serif;
+    --color-botones:#73367b;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-OpenSans);
+}
+.fondo{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 2%, rgba(39,53,112,1) 20%, rgba(163,73,164,1) 86%, rgba(217,139,218,1) 100%);
+}
+
+/** MENU NAV*/
+.contmenu{
+    margin-left: 400px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.menuhome{
+    padding-top: 10px;
+    background-color: #000000;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;  
+    padding-bottom: 10px;
+ }
+ .navmenu{
+    border: 1px solid;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    margin-left: 22%;
+    margin-right: 35%;
+ }
+ .navmenu:hover{
+    background-color: var(--color-gris);
+ }
+ .menuhome img{
+    width: 30px;
+    height: 30px;
+    margin-left: 14px;
+    margin-top: 14px;
+ }
+ .menu{
+    margin-top: 25px;
+    margin-bottom: 20px;
+ }
+ .menu li{
+    color: var(--color-blanco);
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+     
+ }
+ .menu li a{
+    text-decoration: none;
+    color: var(--color-blanco);
+ }
+
+ /** Sobre mi*/
+.about{
+    background-color: var(--color-blanco);
+    width: 80%;
+    margin-top: 6%;
+    height: 350px;
+}
+.about img{
+    width: 150px;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+ /** CARDS */
+.contenedor{
+   text-align: center;
+   color: var(--color-blanco);
+   padding: 10%;
+}
+.contenedor span{
+    font-size: 28px;
+}
+.cards{
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: auto;
+    width: 350px;
+    height: 410px;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 80px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.cards:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0,0.5);
+    transform: translateY(-15px);
+}
+.textcard{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 124px;
+}
+.cards img{
+    width: 325px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 5px; 
+}
+.textcard h2{
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.textcard span{
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+.butons{
+    background-color: var(--color-botones);
+    color: var(--color-blanco);
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 1px 1px 5px #683b6e;
+}
+.butons:hover{
+    background-color: var(--color-negro);
+    border: 1px solid;
+}
+.disabled{
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
+    border: 0;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 1px 1px 5px #636363;
+    
+}
+/** Formulario Contacto */
+.contcontact{
+    padding: 1px;
+}
+.contacto{
+    background-color: var(--color-negro);
+    margin: auto;
+    width: 600px;
+    height: auto;
+    margin-top: 140px;
+    padding-top: 50px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+}
+.contacto span{
+   font-size: 28px;
+}
+.form{
+    margin-top: 20px;
+}
+.casilla{
+    width: 80%;
+    margin-bottom: 25px;
+    font-size: 14px;
+    height: 70%;
+    padding: 9px 9px;
+}
+.form textarea{
+    height: 80px;
+}
+.boton{
+    background-color: var(--color-botones);
+    color: var(--color-blanco);
+    width: 80%;
+    margin-bottom: 50px;
+    padding: 10px 10px;
+    border: none;
+}
+.boton:hover{
+    background-color: var(--color-negro);
+    border: 1px solid;
+    margin-bottom: 48px;
+}
+.separador{
+    display: flex;
+}
+.separador span{
+    background-color: var(--color-blanco);
+    height: 1px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.separador p{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.redes{
+    margin-top: 50px;
+    display: inline-flex;
+}
+.redes img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 50px;
+}
+.redes a:nth-child(2){
+    background-color: var(--color-blanco);
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 20px;
+}

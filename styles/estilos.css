@@ -20,29 +20,26 @@ html{
 }
 
 /** MENU NAV*/
-.contmenu{
-    margin-left: 400px;
-    width: 100%;
-    align-items: center;
-    display: flex;
-}
 .menuhome{
-    padding-top: 10px;
-    background-color: #000000;
-    position: fixed;
     overflow: hidden;
-    width: 100%;
-    align-items: center;  
+    width: 100%; 
     padding-bottom: 10px;
- }
- .navmenu{
+}
+.contmenu{
+    background-color: #000000;
+    padding-left: 500px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+.navmenu{
     border: 1px solid;
     width: 60px;
     height: 60px;
     border-radius: 40px;
     background-color: #FFFFFF;
     margin-left: 22%;
-    margin-right: 35%;
+    margin-right: 50%;
  }
  .navmenu:hover{
     background-color: var(--color-gris);
@@ -70,16 +67,37 @@ html{
  }
 
  /** Sobre mi*/
-.about{
-    background-color: var(--color-blanco);
-    width: 80%;
-    margin-top: 6%;
-    height: 350px;
+.about{ 
+    width: 100%;
+    margin-top: 11%;
+    height: 400px;
+    display: block;
 }
-.about img{
-    width: 150px;
-    margin-top: 70px;
-    margin-left: 70px;
+.inf{
+    background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.5)),url(/imagenes/fondo-presentacion.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 300px;
+    margin-right: 100px;
+    width: 900px;
+    box-shadow: 1px 2px 30px 10px var(--color-negro);
+}
+.titulo{
+    color:var(--color-blanco);
+    /*-webkit-text-stroke: 1px var(--color-negro); poner borde al titulo*/
+    padding-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.texto{
+    display: block;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: var(--color-blanco);
+    font-size: 16px;
+    padding-bottom: 60px;
 }
 
  /** CARDS */
@@ -208,17 +226,12 @@ html{
     margin-right: 30px;
 }
 .redes{
-    margin-top: 50px;
+    margin-top: 40px;
     display: inline-flex;
 }
 .redes img{
     width: 40px;
     height: 40px;
-    margin-bottom: 50px;
-}
-.redes a:nth-child(2){
-    background-color: var(--color-blanco);
-    height: 40px;
-    border-radius: 20px;
-    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }

@@ -54,11 +54,15 @@
         <div class="contcontact" id="contact">
             <div class="contacto">
                 <span>Contactame</span>
-                <form class="form" action="">
-                    <input type="text" id="name" class="casilla" placeholder="Nombre"/>
-                    <input type="email" id="mail" class="casilla"placeholder="Correo Electronico"/>
-                    <textarea id="msg" placeholder="Mensaje" class="casilla"></textarea>
+                <form class="form" action="https://formsubmit.co/natalia.estela.f@gmail.com" method="POST">
+                    <input type="text" id="name" name="name" class="casilla" placeholder="Nombre"/>
+                    <input type="email" id="mail" name="mail" class="casilla"placeholder="Correo Electronico"/>
+                    <textarea id="msg" name="msg" placeholder="Mensaje" class="casilla"></textarea>
                     <button id="btnenv" class="boton">Enviar</button>
+
+                    <input type="hidden" name="_subject" value="Contacto github" >
+                    <input type="hidden" name="_autoresponse" value="su correo a sido enviado exitosamente! estamos en contacto saludos :)">
+                    <input type="hidden" name="_template" value="table">
                 </form>
             <div class="contredes">
                 <div class="separador">

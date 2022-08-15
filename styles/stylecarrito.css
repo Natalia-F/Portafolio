@@ -27,3 +27,13 @@ body{
 .carrito{
     padding-top: 35px;
 }
+.container{
+    margin-top: 70px;
+}
+.card{
+    margin-right: 30px;
+}
+.card .btn{
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+}

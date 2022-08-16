@@ -37,3 +37,16 @@ body{
     background-color: var(--color-rojo);
     color: var(--color-blanco);
 }
+.card .desc{
+    display:none;
+}
+.card:hover .desc{
+   display: block;
+}
+.list{
+    text-decoration: none;
+    list-style: none;
+    width: 50px;
+    float: right;
+    text-decoration-color: black;
+}

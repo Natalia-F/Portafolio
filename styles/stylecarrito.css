@@ -11,6 +11,7 @@
 body{
     background-color: var(--color-fondo);
 }
+/*Menu Nav*/
 .navmenu{
     background-color: var(--color-rojo);
     height: 100px;
@@ -27,6 +28,11 @@ body{
 .carrito{
     padding-top: 35px;
 }
+.incan{
+    width: 50px;
+}
+
+/*PRODUCTOS*/
 .container{
     margin-top: 70px;
 }
@@ -49,4 +55,8 @@ body{
     width: 50px;
     float: right;
     text-decoration-color: black;
+}
+.encabezado{
+    text-align: center;
+    margin-bottom: 35px;
 }

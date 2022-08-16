@@ -26,26 +26,41 @@ function read(producto){
         id: producto.querySelector('a').getAttribute('data-id'),
         cantidad: 1
     }
-
-    proCart = [...proCart, info];
-    write(info)
+    /** Evita duplicados */
+    const exist = proCart.some(producto => producto.id === info.id)
+    if(exist){
+        const elementscart = proCart.map(producto => {
+            if (producto.id === info.id) {
+                producto.cantidad++;
+                return producto; //retorna producto actualizado
+            } else {
+                return producto; //retorna producto no duplicado
+            }
+        })
+        proCart =[...elementscart];
+    }else{
+        proCart = [...proCart, info];
+        
+    }
+    write();
 }
 
-function write(info) {
-    proCart.forEach((producto)=>{
+function write() {
+    clearHtml();
+    proCart.forEach( producto =>{
         const row = document.createElement('tr');
         row.innerHTML= `
             <td>
-            <img src="${info.imagen}" style="width: 60px;"/>
+            <img src="${producto.imagen}" style="width: 60px;"/>
             </td>
             <td>
-            ${info.title}
+            ${producto.title}
             </td>
             <td>
-            <input type="number" placeholder="${info.cantidad}">
+            <input type="number" placeholder="${producto.cantidad}" min="1" class="incan">
             </td>
             <td>
-            ${info.price}
+            ${producto.price}
             </td>
             <td>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
@@ -54,6 +69,11 @@ function write(info) {
             </td>
         `;
         product.appendChild(row);
-        
     });
+}
+
+function clearHtml() {
+    while(product.firstChild){
+        product.removeChild(product.firstChild);
+    }
 }

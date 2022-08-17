@@ -14,8 +14,13 @@ function loadevents(){
 function addProduct(e) {
    e.preventDefault();
 
-   const selected = e.target.parentElement.parentElement;
-   read(selected);
+   if(e.target.classList.contains('add-cart')) {
+    const selected = e.target.parentElement.parentElement;
+    // Enviamos el curso seleccionado para tomar sus datos
+    read(selected);
+    }else{
+        console.log('ño uwu')
+    }
 }
 
 function read(producto){
